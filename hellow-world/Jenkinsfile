@@ -12,8 +12,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'cd hellow-world'
-        sh 'mvn -B -DskipTests clean package'
+        sh 'cd hellow-world && mvn -B -DskipTests clean package'
       }
     }
     stage('Docker Build') {
