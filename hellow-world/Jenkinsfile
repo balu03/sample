@@ -24,7 +24,7 @@ pipeline {
     stage('Push image') {
       steps {
         withDockerRegistry([credentialsId: '5b5cee8b-741d-4ee6-b323-a39164efde8e', url: "https://index.docker.io/v1/"]) {
-          sh '/usr/bin/docker tag helloworld satheeshch/helloworld'
+          //sh '/usr/bin/docker tag helloworld satheeshch/helloworld'
           sh '/usr/bin/docker push satheeshch/helloworld:latest'
         }
       }
