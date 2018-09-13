@@ -1,8 +1,8 @@
 pipeline {
   agent any
   tools { 
-        maven 'Maven-3.5.4'
-        jdk 'JDK-8'
+        maven 'Maven'
+        jdk 'JAVA_HOME'
   }
   stages {
     stage('Clone repository') {
@@ -23,7 +23,7 @@ pipeline {
     }
     stage('Push image') {
       steps {
-        withDockerRegistry([credentialsId: '5b5cee8b-741d-4ee6-b323-a39164efde8e', url: "https://index.docker.io/v1/"]) {
+        withDockerRegistry([credentialsId: 'thamarana', url: "https://index.docker.io/v1/"]) {
           sh '/usr/bin/docker push satheeshch/helloworld:latest'
         }
       }
