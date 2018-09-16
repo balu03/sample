@@ -1,4 +1,7 @@
 pipeline {
+  agent{
+    label 'sample'
+  }
   tools { 
         maven 'Maven'
         jdk 'JAVA_HOME'
