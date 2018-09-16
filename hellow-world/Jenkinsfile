@@ -1,5 +1,4 @@
 pipeline {
-  agent  NewNode
   tools { 
         maven 'Maven'
         jdk 'JAVA_HOME'
