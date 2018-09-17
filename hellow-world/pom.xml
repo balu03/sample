@@ -64,8 +64,8 @@
 	</build>
    <distributionManagement>
     <repository>
-        <id>zettamine-releases</id>
-        <url>https://zettamine.jfrog.io/zettamine/libs-release</url>
+        <id>MavenProject</id>
+        <url>https://zettamine.jfrog.io/zettamine/MavenProject</url>
     </repository>
 </distributionManagement>
 
