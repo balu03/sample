@@ -62,18 +62,16 @@
 			</plugin>
 		</plugins>
 	</build>
-	<servers>
-    <server>
-      <username>admin</username>
-      <password>APBQhMhfNWgXLEyfNg3Nc8uGnia</password>
-      <id>central</id>
-    </server>
-    </servers>
 	<distributionManagement>
-	    <repository>
-        	<id>central</id>
-        	<name>zettamine-releases</name>
-        	<url>https://zettamine.jfrog.io/zettamine/MavenProject</url>
-    	    </repository>
+    <repository>
+        <id>central</id>
+        <name>zettamine-releases</name>
+        <url>https://zettamine.jfrog.io/zettamine/MavenProject</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>zettamine-snapshots</name>
+        <url>https://zettamine.jfrog.io/zettamine/MavenProject</url>
+    </snapshotRepository>
 </distributionManagement>
 </project>
