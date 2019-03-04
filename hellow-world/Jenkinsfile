@@ -2,7 +2,7 @@ pipeline {
   agent any
   tools { 
         maven 'Maven'
-       jdk 'JAVA_HOME' 
+      /* jdk 'JAVA_HOME' */
   }
   stages {
     stage('Clone repository') {
@@ -20,7 +20,7 @@ pipeline {
     }
     stage('Docker Build') {
       steps {
-        sh 'cd hellow-world && /usr/bin/docker build -t thamarana/helloworld1:latest .'
+        sh 'cd hellow-world && /usr/bin/docker build -t thamarana/helloworld1:latest.'
       }
     }
     stage('Push image') {
