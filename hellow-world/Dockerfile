@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-oraclejdk8:slim
+FROM frolvlad/alpine-oraclejre8:slim
 VOLUME /tmp
 ADD target/hellow-world-0.0.1.jar hellow-world.jar
 RUN sh -c 'touch /hellow-world.jar'
