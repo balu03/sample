@@ -20,8 +20,8 @@ pipeline {
     }
     stage('Docker Build') {
       steps {
-        /*sh 'cd hellow-world && /usr/bin/docker build -t balu03/myimage:latest .' */
-          sh '/usr/bin/docker build -t balu03/myimage:latest .'
+        sh 'cd hellow-world && /usr/bin/docker build -t balu03/myimage:latest .'
+          
       }
     }
     stage('Push image') {
